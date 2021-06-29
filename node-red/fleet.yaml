@@ -1,0 +1,13 @@
+defaultNamespace: ottmar
+
+helm: 
+  chart: simple
+  repo: .... helmchart repo
+  releaseName: app-fleet
+  version: 1.0.0
+  values: 
+    persistence: 
+      storrageClassName: longhorn
+    ingress: 
+      enabled: false
+  
